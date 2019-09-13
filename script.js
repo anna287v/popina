@@ -70,13 +70,16 @@ function visDetalje(data) {
 
     document.querySelector("#detalje img").src = "billeder/" + data.gsx$billede.$t;
     document.querySelector("#detalje img").alt = `Portræt af ${data.gsx$billede.$t}`;
+    document.querySelector("#detalje p").textContent = data.gsx$kort.$t;
+    document.querySelector("#detalje p + p").textContent = data.gsx$lang.$t;
+    document.querySelector("#detalje p + p + p").textContent = data.gsx$adresse.$t;
+    document.querySelector("#detalje p + p + p + p").textContent = data.gsx$bedømmelse.$t;
 
-    document.querySelector("#detalje p").textContent = data.gsx$lang.$t;
 
 
-    p1.textContent = " Pris " + data.gsx$adresse.$t + ",-";
-    p2.textContent += " " + data.gsx$kort.$t;
-    p3.textContent += " " + data.gsx$bedømmelse.$t;
+    //p1.textContent = " " + data.gsx$adresse.$t;
+    //p2.textContent += " " + data.gsx$kort.$t;
+    //p3.textContent += " " + data.gsx$bedømmelse.$t;
     //p4.textContent += " lang " + kategori.gsx$lang.$t;
     //document.querySelector("#detalje p4").textContent = kategori.gsx$lang.$t;
 
