@@ -1,56 +1,72 @@
-body {
-    margin: 0;
-}
-
 section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 0.5rem;
-    padding: 25px 100px 25px 100px;
+    grid-gap: 2rem;
 }
 
 article img {
     width: 100%;
 }
 
-nav {
+nav {}
+
+/*Nav*/
+header nav button:link {
+    color: #f5bfd8;
+}
+
+/*visited link*/
+header nav button:visited {
+    color: #f5bfd8;
+}
+
+/* Hover */
+header nav button:hover {
+    color: #f5bfd8;
+}
+
+header nav {
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
-    padding: 15px;
+
+}
+
+header nav button {
+    font-family: 'oswald', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+
 }
 
 h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: 3rem;
-    color: #b93939;
+    font-weight: normal;
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-}
-
-p {
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-
-button {
-    border-radius: 25px;
-    padding: 5px;
-    font-size: 1rem;
-    margin: 6px;
-    width: 100px;
-}
-
-.kategori {
+.data {
     margin: 5px;
     padding: 5px;
-    background-color: white;
 }
 
 .valgt {
-    background-color: rgb(185, 57, 57);
+    color: #f5bfd8;
+
+}
+
+.tekst {
+    text-align: center;
+
 }
 
 #detalje {
@@ -59,16 +75,14 @@ button {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(244, 236, 226, 0.64);
     overflow: scroll;
     display: none;
-
-
+    background: rgba(128, 128, 128, 0.63);
 }
 
 #detalje p {
-    max-width: 450px;
-    align-content: center;
+    max-width: 400px;
+
 }
 
 #detalje .luk {
@@ -78,7 +92,7 @@ button {
     font-size: 4rem;
 }
 
-#detalje .kategori {
+#detalje .data {
     width: 60vw;
     min-height: 50vh;
     margin: 4rem auto;
@@ -86,11 +100,11 @@ button {
     background: white;
 }
 
-#splash {
-    background-image: url(billeder/popina.png);
-    background-size: 100%;
-    width: 100%;
-    height: 25vh;
+
+#splash img {
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
     max-width: none;
-    align-content: center;
+
 }
