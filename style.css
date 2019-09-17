@@ -66,6 +66,7 @@ h1 {
 
 .tekst {
     text-align: center;
+    line-height:
 
 }
 
@@ -104,5 +105,47 @@ h1 {
     width: 100%;
 
 }
+
+/*BURGER*/
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
+
+
+
+
+/*BURGER SLUT*/
 
 /*Lav evt mediaquery til højden så der ikke er for meget hvid luft ovenover splash billedet*/
