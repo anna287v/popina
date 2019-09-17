@@ -1,4 +1,4 @@
-section {
+section.mad-liste {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2rem;
@@ -101,9 +101,8 @@ h1 {
 
 
 #splash img {
-    width: 100vw;
-    height: 50vh;
-    background-size: cover;
-    max-width: none;
+    width: 100%;
 
 }
+
+/*Lav evt mediaquery til højden så der ikke er for meget hvid luft ovenover splash billedet*/
