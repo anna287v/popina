@@ -1,45 +1,51 @@
 section#mad-liste {
+    /* Display grid definerer et html element som grid-container*/
     display: grid;
+    /*Her angiver man bredden og antal af kolonner - vi har herunder angiver vi det i px og bredden angiver vi i fr (fraction)*/
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2rem;
 }
 
 article img {
+    /*100% af bredden i på billedet i article*/
     width: 100%;
 }
 
+/*HEADER MED NAV INDE I*/
 
-/*Nav*/
-header nav button:link {
-    color: #fcb268;
-}
-
-/*visited link*/
+/*Det besøgte link*/
 header nav button:visited {
     color: #fcb268;
 }
 
-/* Hover */
+/*Når man hover over links */
 header nav button:hover {
     color: #fcb268;
 }
 
-
-header nav button {
-    font-family: 'oswald', sans-serif;
-    font-size: 1.5rem;
-    margin: 0 1rem;
-    text-decoration: none;
+/*Farven på knapperne når de bliver trykket på*/
+.valgt {
+    color: #fcb268;
 }
 
+/*Boksen rundt om knapperne*/
+header nav button {
+    /*Den ydre afstand fra boksens kant til den næste boks*/
+    margin: 0 1rem;
+}
+
+/*Selve knappen*/
 button {
     font-size: 1.5rem;
+    /*Den indre afstand i boksen*/
     padding: 0;
+    /*Fjerner kanten på knapperne*/
     border: 0;
-    font-family: sans-serif;
+    font-family: 'oswald', sans-serif;
 
 }
 
+/*Overskrift*/
 h1 {
     text-align: center;
     font-family: sans-serif;
@@ -47,15 +53,14 @@ h1 {
     font-weight: 100;
 }
 
+/*Div der angiver margin og padding på billederne*/
 .data {
     margin: 5px;
     padding: 5px;
 }
 
-.valgt {
-    color: #fcb268;
-}
 
+/*Brødtekst på forsiden - beskrivelse af konceptet*/
 .tekst {
     text-align: left;
     line-height: 0.5;
@@ -65,8 +70,9 @@ h1 {
 
 }
 
-/*Pop-up vindue*/
+/*POP-UP VINDUE*/
 
+/*Styling af baggrund når pop-up vindet er fremme*/
 #detalje {
     position: fixed;
     top: 0;
@@ -79,28 +85,26 @@ h1 {
 
 }
 
+/*Teksten når pop-up boksen kommer frem*/
 #detalje p {
     max-width: 400px;
     margin-left: 7.5vw;
-
 }
 
+/*Overskriften når pop-up boksen kommer frem*/
 #detalje h2 {
     margin-left: 7.5vw;
     font-size: 2rem;
-
 }
 
+/*Luk knappen - krydset*/
 #detalje .luk {
-    /*
-    position: fixed;
-    top: 10vw;
-    right: 25vw;
-*/
+    /*krydset sætter sig fast til højre - også når man scroller*/
     float: right;
     font-size: 4em;
 }
 
+/*Selve boksen - styling*/
 #detalje .data {
     width: 50vw;
     min-height: 50vh;
@@ -109,6 +113,7 @@ h1 {
     background: white;
 }
 
+/*Styling af img i pop-up vinduet*/
 #detalje img {
     display: block;
     margin-left: auto;
@@ -117,25 +122,29 @@ h1 {
     height: 35vw;
 }
 
-/*Pop-up vindue slut*/
+/*POP-UP VINDUE SLUT*/
 
+/*Splash billede*/
 #splash img {
     width: 100%;
-
 }
 
-/*BURGER*/
+/*BURGER MENU*/
+
+/*Når burger menuen er lukket skal den transforme således*/
 .hidden {
     transform: translateX(-100%);
     opacity: 0;
 }
 
+/*Selve burger knappen*/
 #menuknap {
     display: inline-block;
     font-size: 2rem;
     font-family: sans-serif;
 }
 
+/*Menuen når den er foldet ud*/
 #menu {
     list-style-type: none;
     transition: transform .3s;
@@ -144,7 +153,7 @@ h1 {
     text-align: center;
 }
 
-
+/*Når siden er over 600px skal burger menuen ikke vises*/
 @media only screen and (min-width: 600px) {
 
     #menuknap {
@@ -164,25 +173,19 @@ h1 {
 /*BURGER SLUT*/
 
 
-/*Hover*/
+/*Hover på billederne*/
 
 .col img {
-    filter: gray;
     -webkit-transition: all .7s ease-in-out;
 }
 
 .col img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.06);
 }
 
 /*Hover slut*/
 
-
-
-
-/***Footer****/
+/***FOOTER****/
 
 footer {
     text-align: center;
@@ -191,9 +194,9 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
+/*Tekst i footer*/
 footer p {
     color: #625b5b;
     padding-top: 0.5rem;
