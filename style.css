@@ -56,14 +56,13 @@ h1 {
 
 .valgt {
     color: #f5bfd8;
-
 }
 
 .tekst {
     text-align: center;
-    line-height:
-
 }
+
+/*Pop-up vindue*/
 
 #detalje {
     position: fixed;
@@ -74,17 +73,29 @@ h1 {
     overflow: scroll;
     display: none;
     background: rgba(98, 98, 98, 0.63);
+
 }
 
 #detalje p {
     max-width: 400px;
+    margin-left: 7.5vw;
+
+}
+
+#detalje h2 {
+    margin-left: 7.5vw;
+    font-size: 2rem;
 
 }
 
 #detalje .luk {
-    top: 0;
-    right: 0;
-    font-size: 4rem;
+    /*
+    position: fixed;
+    top: 10vw;
+    right: 25vw;
+*/
+    float: right;
+    font-size: 4em;
 }
 
 #detalje .data {
@@ -95,6 +106,15 @@ h1 {
     background: white;
 }
 
+#detalje img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+    height: 35vw;
+}
+
+/*Pop-up vindue slut*/
 
 #splash img {
     width: 100%;
