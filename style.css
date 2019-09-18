@@ -8,7 +8,6 @@ article img {
     width: 100%;
 }
 
-nav {}
 
 /*Nav*/
 header nav button:link {
@@ -25,12 +24,6 @@ header nav button:hover {
     color: #f5bfd8;
 }
 
-header nav {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-
-}
 
 header nav button {
     font-family: 'oswald', sans-serif;
@@ -38,6 +31,8 @@ header nav button {
     margin: 0 1rem;
     text-decoration: none;
 }
+
+
 
 button {
     font-size: 1.5rem;
@@ -142,10 +137,47 @@ h1 {
     }
 }
 
-
-
-
-
 /*BURGER SLUT*/
+
+
+/*Hover*/
+
+.col img {
+    filter: gray;
+    -webkit-transition: all .7s ease-in-out;
+}
+
+.col img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.06);
+}
+
+/*Hover slut*/
+
+
+
+
+/***Footer****/
+
+footer {
+    text-align: center;
+    background-color: #f2eded;
+    display: flex;
+    justify-content: center;
+    ;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+footer p {
+    color: #f5bfd8;
+    padding-top: 0.5rem;
+    text-align: center;
+    width: 20rem;
+}
+
+/*****Footer slut*****/
 
 /*Lav evt mediaquery til højden så der ikke er for meget hvid luft ovenover splash billedet*/

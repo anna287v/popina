@@ -14,10 +14,8 @@
     </section>
     <header>
         <nav>
-<!--
             <div id="menuknap">☰</div>
             <ul id="menu" class="hidden">
--->
                 <button data-data="forside" class="valgt">Forside</button>
                 <button data-data="Asiatisk">Asiatisk</button>
                 <button data-data="Bistro">Bistro</button>
@@ -28,7 +26,7 @@
                 <button data-data="Mexikansk">Mexikansk</button>
                 <button data-data="Nordisk">Nordisk</button>
                 <button data-data="Street food">Street</button>
-<!--           </ul>-->
+            </ul>
         </nav>
     </header>
     <div class="tekst">
@@ -38,18 +36,28 @@
         <p>Velbekomme </p>
     </div>
     <template>
+
+
+
         <article class="data">
             <h2>Navn</h2>
-            <img class="profil-billede">
+            <div class="col">
+                <img class="profil-billede">
+            </div>
         </article>
     </template>
 
-    <section id="mad-liste"></section>
+    <section id="mad-liste">
+
+    </section>
+
     <section id="detalje">
         <article class="data">
             <button class="luk">×</button>
             <h2></h2>
+
             <img src="billeder/" alt="">
+
             <div class="indhold">
                 <p></p>
                 <p></p>
@@ -59,10 +67,17 @@
                 <p>Kontakt <a class="link" href=""></a>
                 </p>
             </div>
-
-
         </article>
     </section>
+
+    <footer>
+        <p> <b>Adresse</b> <br>
+            Lygten 16 <br>
+            1300 København NV.</p>
+        <p><b>Sociale medier </b> <br> Facebook <br> Instagram</p>
+        <p><b>Kontakt</b> <br> tlf. 33125512 <br> Mail: info@popina.com </p>
+    </footer>
+
 
     <script src="script.js"></script>
     <script src="burger.js"></script>

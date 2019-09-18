@@ -77,11 +77,7 @@ function visDetalje(data) {
 
 
 
-    //p1.textContent = " " + data.gsx$adresse.$t;
-    //p2.textContent += " " + data.gsx$kort.$t;
-    //p3.textContent += " " + data.gsx$bedømmelse.$t;
-    //p4.textContent += " lang " + kategori.gsx$lang.$t;
-    //document.querySelector("#detalje p4").textContent = kategori.gsx$lang.$t;
+
 
 }
 
