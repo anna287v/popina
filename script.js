@@ -81,6 +81,8 @@ function visDetalje(data) {
     document.querySelector("#detalje p + p").textContent = data.gsx$lang.$t; //lang tekst om restaurant i pop-up - hentes fra sheet
     document.querySelector("#detalje p + p + p").textContent = data.gsx$adresse.$t; //adresse på restaurant - hentes fra sheet
     document.querySelector("#detalje p + p + p + p").textContent = data.gsx$bedømmelse.$t; //stjernebedømmelse - hentes fra sheet
+    document.querySelector("#detalje .link").href = data.gsx$link.$t;
+    document.querySelector("#detalje .link").textContent = data.gsx$link.$t;
 }
 
 function skjulDetalje() { //når pop-up vinduet er lukket, kaldes der på selve sitet
