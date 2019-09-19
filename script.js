@@ -27,6 +27,11 @@ async function loadData() {
     vis(); //kald funktionen vis
 }
 
+function splash() {
+
+
+}
+
 function vis() { //den funktion der bliver kaldt, når selve siden skal vises
 
     const skabelon = document.querySelector("template").content;

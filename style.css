@@ -41,16 +41,20 @@ button {
     padding: 0;
     /*Fjerner kanten på knapperne*/
     border: 0;
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 
 }
 
 /*Overskrift*/
 h1 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
     font-weight: 100;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Div der angiver margin og padding på billederne*/
@@ -62,12 +66,14 @@ h1 {
 
 /*Brødtekst på forsiden - beskrivelse af konceptet*/
 .tekst {
-    text-align: left;
-    line-height: 0.5;
     font-size: 1.1rem;
-    width: 600px;
-    margin-left: 30%;
+    width: 400px;
+    margin: auto;
 
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
 
 /*POP-UP VINDUE*/
@@ -134,7 +140,7 @@ h1 {
 /*Når burger menuen er lukket skal den transforme således*/
 .hidden {
     transform: translateX(-100%);
-    opacity: 0;
+    display: none;
 }
 
 /*Selve burger knappen*/
@@ -162,7 +168,7 @@ h1 {
 
     #menu.hidden {
         transform: translateX(0);
-        opacity: 1;
+        display: block;
     }
 
     #menu li {
